@@ -122,14 +122,10 @@ def main():
             st.write("Precision: ", precision)
             st.write("Recall: ", recall)
             plot_metrics(metrics)
-                
-
-
-
-
-
+            
      ############### Step 5 Training a Random Forest Classifier ##########
     # Start you Code here #
+    
     if classifier == 'Random Forest':
         st.sidebar.subheader("Model Hyperparameters")
         n_estimators = st.sidebar.number_input("Number of trees in the forest", 100, 1000, step=10, key='n_estimators')
@@ -151,26 +147,10 @@ def main():
             st.write("Precision: ", precision)
             st.write("Recall: ", recall)
             plot_metrics(metrics)
-
-
-
-
-
-
-
-
+#
     if st.sidebar.checkbox("Show raw data", False):
         st.subheader("Mushroom dataset")
         st.write(df)
-
-    
-    
-    
-
-
-
-
+#
 if __name__ == '__main__':
     main()
-
-
