@@ -95,9 +95,6 @@ def main():
             st.write("Recall: ", recall)
             plot_metrics(metrics)
 
-
-    
-
      ############### Step 4 Training a Logistic Regression Classifier ##########
      # Start you Code here #
 
@@ -147,10 +144,14 @@ def main():
             st.write("Precision: ", precision)
             st.write("Recall: ", recall)
             plot_metrics(metrics)
-#
+            
+    #
+    
     if st.sidebar.checkbox("Show raw data", False):
         st.subheader("Mushroom dataset")
         st.write(df)
-#
+        
+    #
+
 if __name__ == '__main__':
     main()
